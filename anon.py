@@ -13,7 +13,7 @@ class Anonymization:
 
     def token_info(self, cols):
         def hash_value(value): # define uma funcao ajudante para os valores hash
-            return hashlib.sha1(value.encode('utf-8')).hexdigest()
+            return hashlib.sha256(value.encode('utf-8')).hexdigest()
 
         for column in cols: # processa cada coluna especificada
             self.df[column] = self.df[column].astype(str)
