@@ -14,8 +14,8 @@ def get_table_download_link(df):
 
 st.markdown('# Aplicativo de Anonimização de Dados')
 
-st.markdown('## Faça Upload do Arquivo (.csv,.xlsx)')
-data_file=st.file_uploader('Arquivo',type=['csv','xlsx'])
+st.markdown('## Faça Upload do Arquivo (.csv)')
+data_file=st.file_uploader('Arquivo',type=['csv'])
 
 df=[] # inicializa o dataframe
 
