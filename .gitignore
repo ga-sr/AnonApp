@@ -3,4 +3,4 @@
 # Python temp files
 __pycache__/
 *.py[cod]
-*$py.class
+*$py.class.pytest_cache/
